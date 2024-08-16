@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Color de fondo para la página */
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tarjeta {
+    width: 450px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr 3fr;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Este es el contenido del nombre del gato */
+.cabeza {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Este es el nombre del gato */
+.nomCat {
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Este es el contenido donde va la imagen y los datos del gato */
+.info {
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 2fr;
+}
+/* Este es el contenido donde va la equis */
+.equis {
+    display: flex;
+    justify-self: end;
+}
+/* Esta es la equis */
+.X {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* Este es el contenido donde va la imagen */
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Esta es la imagen */
+.imagen > img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 150px;
+}
+/* Este es el contenido donde va los datos del gato */
+.datos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    text-align: center; 
+}
+/* Estos son los datos que se pidieron del gato */
+.edad, .colorojos, .sexo {
+    margin: 0 10px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    border: none; 
+}
+/* Este es el contenido donde va la rza del gato */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Esta es la raza del gato */
+.raza {
+    margin: 10px;
+    width: 200px;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
